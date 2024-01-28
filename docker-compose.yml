@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  nginx:
+    build: ./nginx
+    ports:
+      - "9500:80"
+    depends_on:
+      - fastapi_aggregator
+
+  fastapi_aggregator:
+    build: ./fastapi_aggregator
+    ports:
+      - "9000:9000"
