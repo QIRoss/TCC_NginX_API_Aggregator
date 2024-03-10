@@ -11,4 +11,4 @@ services:
   fastapi_aggregator:
     build: ./fastapi_aggregator
     ports:
-      - "9000:9000"
+      - 9000
